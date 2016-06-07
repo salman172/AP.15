@@ -1,0 +1,37 @@
+#include<stdio.h>
+#include<iostream>
+using namespace std;
+
+int main(){
+     int i ;
+     struct{
+     char no[100];
+     char nama_buah[10];
+     int Harga_buah;
+     float Total;
+     
+    
+} buah[10];
+ 
+   for(i=1; i<=4; i++){
+   cout<<"no = ";
+   cin>>buah[i].no;
+   cout<<"nama buah = ";
+   cin>>buah[i].nama_buah;
+   cout<<"Harga Buah =Rp. ";
+   cin>>buah[i].Harga_buah;
+   cout<<"-----------Next---------------"<<endl;
+   }
+      
+cout<<endl;
+cout<<"Data Buah"<<endl;
+ 
+for(i=1; i<=4; i++){
+    cout<<"--------Data Buah-----------"<<endl;
+    cout<<"buah Ke - "<<i<<endl;
+    cout<<"nama buah = "<<buah[i].nama_buah<<endl;
+    cout<<"Harga buah = "<<buah[i].Harga_buah<<endl;
+    
+    }
+return 0;
+}
